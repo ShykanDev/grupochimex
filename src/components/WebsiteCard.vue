@@ -1,44 +1,42 @@
 <template>
-  <!-- Card horizontal -->
+  <!-- Lista horizontal responsive -->
   <div v-if="!showCardSquare"
-    class="max-w-full p-4 mx-auto animate-fade-up bg-white shadow-lg rounded-xl hover:shadow-2xl transition-all ease-in-out duration-300 hover:border-2 hover:border-sky-500 group">
-    <div class="flex gap-6 h-72"> <!-- Contenedor horizontal -->
-      <!-- Imagen -->
-      <div class="w-1/3 h-full overflow-hidden rounded-xl shrink-0">
-        <img :src="website.domainImgUrl" alt="Domain Preview"
-          class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
-          onerror="this.src='https://via.placeholder.com/800x400/EAEAEA/808080?text=No+Image'">
+    class="max-w-[90dvw] mx-auto p-4 bg-white border-b border-gray-200 hover:bg-gray-50 transition-colors duration-200 flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
+
+    <!-- Imagen -->
+    <div class="w-full sm:w-32 h-32 overflow-hidden rounded-lg shrink-0">
+      <img :src="website.domainImgUrl" alt="Domain Preview"
+        class="object-cover w-full h-full transition-transform duration-300 hover:scale-105"
+        onerror="this.src='https://via.placeholder.com/128x128/EAEAEA/808080?text=No+Image'">
+    </div>
+
+    <!-- Contenido -->
+    <div class="flex-1 min-w-0 flex flex-col gap-2">
+      <!-- Encabezado -->
+      <div translate="no" class="flex items-start justify-between mb-4">
+        <h2 v-if="website.domainName.length == 1" class="text-lg sm:text-2xl font-bold ">{{ currentDomain }}</h2>
+        <h2 v-else class="text-2xl font-bold animate-fade-up" :key="dynamicDomainName">{{ dynamicDomainName }}</h2>
+        <span class="bg-green-100 text-green-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Activo</span>
       </div>
 
-      <!-- Contenido -->
-      <div class="flex flex-col flex-1 py-2">
-        <!-- Encabezado -->
-        <div class="flex items-center justify-between mb-3">
-          <h2 class="text-2xl font-bold text-gray-800 font-poppins">{{ currentDomain }}</h2>
-          <span class="px-3 py-1 text-sm font-semibold text-green-700 bg-green-100 rounded-full">Activo</span>
-        </div>
+      <!-- Descripción -->
+      <p class="text-gray-600 text-sm line-clamp-2 sm:line-clamp-3 mb-2">
+        {{ website.domainDescription }}
+      </p>
 
-        <!-- Descripción -->
-        <p class="flex-1 mb-4 text-gray-600 line-clamp-4">
-          {{ website.domainDescription }}
-        </p>
-
-
-
-        <!-- Botón -->
-        <a :href="website.websiteUrl" target="_blank"
-          class="flex items-center justify-between px-6 py-3 transition-colors bg-sky-500 rounded-lg hover:bg-sky-600 group-button">
-          <span class="font-medium text-white">Visitar Sitio</span>
-          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-          </svg>
-        </a>
-      </div>
+      <!-- Botón -->
+      <a :href="website.websiteUrl" target="_blank"
+        class="self-start flex items-center gap-2 px-4 py-2 text-sm sm:text-base text-sky-700 hover:text-sky-800 font-medium transition-colors">
+        Visitar Sitio
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+        </svg>
+      </a>
     </div>
   </div>
   <!-- Card cuadrada -->
   <div v-if="showCardSquare"
-    class="max-w-xl p-1 mx-auto animate-fade-up  bg-white text-slate-700 shadow-lg rounded-xl hover:shadow-2xl hover:scale-[1.02] hover:border-2 hover:border-orange-600 transition-all ease-in-out duration-300 hover:bg-orange-50 hover:text-slate-800 ">
+    class="max-w-[90dvw] sm:max-w-xl p-1 mx-auto animate-fade-up  bg-white text-slate-700 shadow-lg rounded-xl hover:shadow-2xl sm:hover:scale-[1.02] hover:border-2 hover:border-orange-600 transition-all ease-in-out duration-300 hover:bg-orange-50 hover:text-slate-800 ">
     <!-- Imagen superior -->
     <img :src="website.domainImgUrl" alt="Domain Preview" class="w-full rounded-2xl"
       onerror="this.src='https://via.placeholder.com/800x400/EAEAEA/808080?text=No+Image'">
@@ -46,10 +44,9 @@
     <!-- Contenido -->
     <div class="p-6">
       <!-- Encabezado -->
-      <div class="flex items-start justify-between mb-4">
-        <h2 v-if="website.domainName.length == 1" class="text-2xl font-bold ">{{ currentDomain }}</h2>
+      <div translate="no" class="flex items-start justify-between mb-4">
+        <h2 v-if="website.domainName.length == 1" class="text-lg sm:text-2xl font-bold ">{{ currentDomain }}</h2>
         <h2 v-else class="text-2xl font-bold animate-fade-up" :key="dynamicDomainName">{{ dynamicDomainName }}</h2>
-
         <span class="bg-green-100 text-green-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Activo</span>
       </div>
 

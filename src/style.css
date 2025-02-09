@@ -1,16 +1,18 @@
-@import 'tailwindcss';
-/* font poppins */
+@import 'tailwindcss'; /* This MUST be the very first @import */
+@import 'tailwindcss-animated'; /* Import after tailwindcss */
+
+/* Font imports - these MUST come after the tailwind imports, but before any other CSS rules */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-/* font urbanist */
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allerta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Licorice&display=swap');
 
-/* animations tailwind css */
-/* tailwind css v4.x */
-@import 'tailwindcss';
-@import 'tailwindcss-animated';
-
-/* font family */
+/* Font family definitions - these go AFTER the imports */
 @theme {
   --font-poppins: 'Poppins', sans-serif;
   --font-urbanist: 'Urbanist', sans-serif;
+  --font-hammersmith: 'Hammersmith One', sans-serif;
+  --font-allerta: 'Allerta', sans-serif;
+  --font-licorice: 'Licorice', sans-serif;
 }
