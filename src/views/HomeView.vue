@@ -28,7 +28,7 @@
         </section>
 
         <!-- Search Bar -->
-        <section class="w-full flex justify-center sticky top-25 z-50 mt-4">
+        <section class="w-full flex justify-center sticky top-45 md:top-25 z-40 mt-4">
           <div class="relative w-1/2 md:w-3/4 lg:w-1/3 hover:w-3/4 transition-all duration-300 ease-in-out">
             <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
               <i class="fas fa-search text-gray-500"></i>
@@ -61,11 +61,32 @@
         </section>
 
         <!-- button (actually an anchor) to go to top with fas fa  icon -->
-        <a href="#intro" class="fixed bottom-4 right-4 bg-orange-600 text-white p-2 rounded-full ring-sky-00 ring-2">
+        <a href="#intro"
+          class="fixed bottom-4 right-4 bg-orange-600 text-white p-2 rounded-full ring-yellow-800 ring-2">
           <i class="fas fa-arrow-up"></i>
           Ir arriba
         </a>
       </article>
+      <div class="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-md font-poppins">
+        <h2 class="text-2xl font-bold mb-4 text-center">Seguridad y Privacidad</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-blue-100 p-4 rounded-lg shadow-inner text-center">
+            <i class="fas fa-lock text-4xl text-blue-500 mb-2"></i>
+            <h3 class="text-xl font-semibold">Seguridad SSL</h3>
+            <p class="text-gray-700">Esta página utiliza SSL para proteger tus datos.</p>
+          </div>
+          <div class="bg-green-100 p-4 rounded-lg shadow-inner text-center">
+            <i class="fas fa-shield-alt text-4xl text-green-500 mb-2"></i>
+            <h3 class="text-xl font-semibold">Privacidad Garantizada</h3>
+            <p class="text-gray-700">No recopilamos información bancaria o personal.</p>
+          </div>
+          <div class="bg-yellow-100 p-4 rounded-lg shadow-inner text-center">
+            <i class="fas fa-credit-card text-4xl text-yellow-500 mb-2"></i>
+            <h3 class="text-xl font-semibold">Sin Costo</h3>
+            <p class="text-gray-700">Nuestra página es segura y sin costo para ti.</p>
+          </div>
+        </div>
+      </div>
     </template>
   </MainLayout>
 </template>
@@ -570,7 +591,69 @@ const websites = ref<IWebsite[]>([
     colorDomains: [],
     websiteUrl: "https://www.comercioamerica.com"
   },
-
+  {
+    domainName: ["www.foredom.com.mx"],
+    domainDescription: "Somos importadores mayoristas de productos Foredom, especializados en motores para uso profesional. Con más de 30 años de experiencia en el mercado, ofrecemos una amplia variedad de productos, tanto de Foredom USA como de Foredom Asia, adaptados a las necesidades de nuestros clientes. Desde herramientas de precisión hasta equipos industriales, garantizamos durabilidad y alto rendimiento.",
+    domainImgUrl: "https://i.ibb.co/DHcvVKWX/foredom.png",
+    category: "",
+    creationDate: "",
+    status: "",
+    colorDomains: [],
+    websiteUrl: "https://www.foredom.com.mx"
+  },
+  {
+    domainName: [
+      "www.soplete.com.mx",
+      "www.microtorch.com.mx"
+    ],
+    domainDescription: "Los sopletes MicroTorch están fabricados con metales de alta calidad, garantizando un rendimiento superior y mayor durabilidad. Su diseño está optimizado para ofrecer eficiencia y seguridad en entornos como laboratorios, cocinas, vidrierías y talleres, cumpliendo con los más altos estándares. Reconocidos por su excelente calidad, nuestros sopletes cuentan con la certificación ISO 9001, lo que asegura productos seguros y de confianza.",
+    domainImgUrl: "https://i.ibb.co/F4jqj10h/soplete.png",
+    category: "",
+    creationDate: "",
+    status: "",
+    colorDomains: [],
+    websiteUrl: "https://www.soplete.com.mx"
+  },
+  {
+    domainName: [
+      "www.hileratungsteno.com",
+      "www.hilerajoyeria.com"
+    ],
+    domainDescription: "La hilera de tungsteno es una herramienta esencial para el trefilado de metales ferrosos y no ferrosos, ideal para la creación de productos de joyería manual. Su alta resistencia al desgaste y tirones suaves hacen que el trefilado sea más eficiente y preciso. Esta herramienta permite reducir el grosor de alambres de diferentes metales, como oro, plata, cobre, platino y otros, aumentando la longitud mientras disminuye el diámetro. ",
+    domainImgUrl: "https://i.ibb.co/5XjPgsCJ/hileratung.png",
+    category: "",
+    creationDate: "",
+    status: "",
+    colorDomains: [],
+    websiteUrl: "https://www.hileratungsteno.com"
+  },
+  {
+    domainName: [
+      "www.etiquetajoyeria.com",
+      "www.etiquetastyvek.com"
+    ],
+    domainDescription: "Las etiquetas especiales para joyería y otros usos diversos están disponibles en diferentes tamaños, modelos y formas. Las etiquetas hechas de Tyvek de Dupont ofrecen una resistencia superior a tirones, vapor y humedad gracias a su composición de microfibras de tela. Estas etiquetas no tienen adhesivo en el centro, evitando manchas o daños en las joyas, y su material termoplástico las hace resistentes a líquidos. Además, se ofrecen productos como hileras de tungsteno y arcos alemanes de alta calidad para joyeros y profesionales en diversos campos.",
+    domainImgUrl: "https://i.ibb.co/pBnTTLTp/etiquetas.png",
+    category: "",
+    creationDate: "",
+    status: "",
+    colorDomains: [],
+    websiteUrl: "https://www.etiquetajoyeria.com"
+  },
+  {
+    domainName: [
+      "www.arcosierra.com",
+      "www.sawframe.com",
+      "www.arcosegueta.com"
+    ],
+    domainDescription: "Los arcos y seguetas premium, como el modelo Arco Germany, están fabricados con acero de alta calidad y origen alemán, conocido por su resistencia a impactos y su durabilidad en trabajos exigentes. Su diseño tipo U optimiza la presión y el rendimiento al calar diversos materiales. El mango de madera sólida proporciona un agarre cómodo y resistente, pintado en negro piano. Además, el sistema ajustable del arco, con una perilla tipo mariposa, asegura que no haya movimiento indeseado al aplicar presión.",
+    domainImgUrl: "https://i.ibb.co/SwLN6PSt/arcosierra.png",
+    category: "",
+    creationDate: "",
+    status: "",
+    colorDomains: [],
+    websiteUrl: "https://www.arcosierra.com"
+  },
   {
     domainName: [
       "www.miexpareja.net",
@@ -634,56 +717,8 @@ const websites = ref<IWebsite[]>([
     colorDomains: [],
     websiteUrl: "https://www.soplete.com.mx"
   },
-  {
-    domainName: ["www.foredom.com.mx"],
-    domainDescription: "Somos importadores mayoristas de productos Foredom, especializados en motores para uso profesional. Con más de 30 años de experiencia en el mercado, ofrecemos una amplia variedad de productos, tanto de Foredom USA como de Foredom Asia, adaptados a las necesidades de nuestros clientes. Desde herramientas de precisión hasta equipos industriales, garantizamos durabilidad y alto rendimiento.",
-    domainImgUrl: "https://i.ibb.co/DHcvVKWX/foredom.png",
-    category: "",
-    creationDate: "",
-    status: "",
-    colorDomains: [],
-    websiteUrl: "https://www.foredom.com.mx"
-  },
-  {
-    domainName: [
-      "www.hileratungsteno.com",
-      "www.hilerajoyeria.com"
-    ],
-    domainDescription: "La hilera de tungsteno es una herramienta esencial para el trefilado de metales ferrosos y no ferrosos, ideal para la creación de productos de joyería manual. Su alta resistencia al desgaste y tirones suaves hacen que el trefilado sea más eficiente y preciso. Esta herramienta permite reducir el grosor de alambres de diferentes metales, como oro, plata, cobre, platino y otros, aumentando la longitud mientras disminuye el diámetro. ",
-    domainImgUrl: "https://i.ibb.co/5XjPgsCJ/hileratung.png",
-    category: "",
-    creationDate: "",
-    status: "",
-    colorDomains: [],
-    websiteUrl: "https://www.hileratungsteno.com"
-  },
-  {
-    domainName: [
-      "www.etiquetajoyeria.com",
-      "www.etiquetastyvek.com"
-    ],
-    domainDescription: "Las etiquetas especiales para joyería y otros usos diversos están disponibles en diferentes tamaños, modelos y formas. Las etiquetas hechas de Tyvek de Dupont ofrecen una resistencia superior a tirones, vapor y humedad gracias a su composición de microfibras de tela. Estas etiquetas no tienen adhesivo en el centro, evitando manchas o daños en las joyas, y su material termoplástico las hace resistentes a líquidos. Además, se ofrecen productos como hileras de tungsteno y arcos alemanes de alta calidad para joyeros y profesionales en diversos campos.",
-    domainImgUrl: "https://i.ibb.co/pBnTTLTp/etiquetas.png",
-    category: "",
-    creationDate: "",
-    status: "",
-    colorDomains: [],
-    websiteUrl: "https://www.etiquetajoyeria.com"
-  },
-  {
-    domainName: [
-      "www.arcosierra.com",
-      "www.sawframe.com",
-      "www.arcosegueta.com"
-    ],
-    domainDescription: "Los arcos y seguetas premium, como el modelo Arco Germany, están fabricados con acero de alta calidad y origen alemán, conocido por su resistencia a impactos y su durabilidad en trabajos exigentes. Su diseño tipo U optimiza la presión y el rendimiento al calar diversos materiales. El mango de madera sólida proporciona un agarre cómodo y resistente, pintado en negro piano. Además, el sistema ajustable del arco, con una perilla tipo mariposa, asegura que no haya movimiento indeseado al aplicar presión.",
-    domainImgUrl: "https://i.ibb.co/SwLN6PSt/arcosierra.png",
-    category: "",
-    creationDate: "",
-    status: "",
-    colorDomains: [],
-    websiteUrl: "https://www.arcosierra.com"
-  },
+
+
   {
     domainName: [
       "www.consultaespecializada.com",
@@ -710,6 +745,16 @@ const websites = ref<IWebsite[]>([
     status: "",
     colorDomains: [],
     websiteUrl: "https://www.sopletesorca.com"
+  },
+  {
+    domainName: ["www.canastascestas.com"],
+    domainDescription: "Nos especializamos en la venta de canastas de hierro forjado de alta calidad y resistencia, ideales para aportar elegancia y funcionalidad a cualquier espacio. Nuestras canastas, fabricadas con materiales duraderos y acabados refinados, están disponibles en una amplia variedad de modelos y tamaños, adecuados tanto para uso doméstico como comercial. Cada pieza combina diseño y solidez, ofreciendo una solución estética y práctica para diferentes necesidades de almacenamiento y decoración.",
+    domainImgUrl: "https://i.ibb.co/7xsN3q6B/canastas-Cestas.jpg",
+    category: "",
+    creationDate: "",
+    status: "",
+    colorDomains: [],
+    websiteUrl: "https://www.canastascestas.com"
   },
   {
     domainName: ["www.oficiomaestro.com"],
@@ -835,16 +880,7 @@ const websites = ref<IWebsite[]>([
     colorDomains: [],
     websiteUrl: "https://www.mantenimientocondominio.com"
   },
-  {
-    domainName: ["www.canastascestas.com"],
-    domainDescription: "Nos especializamos en la venta de canastas de hierro forjado de alta calidad y resistencia, ideales para aportar elegancia y funcionalidad a cualquier espacio. Nuestras canastas, fabricadas con materiales duraderos y acabados refinados, están disponibles en una amplia variedad de modelos y tamaños, adecuados tanto para uso doméstico como comercial. Cada pieza combina diseño y solidez, ofreciendo una solución estética y práctica para diferentes necesidades de almacenamiento y decoración.",
-    domainImgUrl: "https://i.ibb.co/7xsN3q6B/canastas-Cestas.jpg",
-    category: "",
-    creationDate: "",
-    status: "",
-    colorDomains: [],
-    websiteUrl: "https://www.canastascestas.com"
-  },
+
   {
     domainName: [
       "www.harekrishna.com.mx",

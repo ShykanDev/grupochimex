@@ -14,8 +14,9 @@
     <div class="flex-1 min-w-0 flex flex-col gap-2">
       <!-- Encabezado -->
       <div translate="no" class="flex items-start justify-between mb-4">
-        <h2 v-if="website.domainName.length == 1" class="text-lg sm:text-2xl font-bold ">{{ currentDomain }}</h2>
-        <h2 v-else class="text-2xl font-bold animate-fade-up" :key="dynamicDomainName">{{ dynamicDomainName }}</h2>
+        <h2 v-if="website.domainName.length == 1" class="text-base sm:text-2xl font-bold ">{{ currentDomain }}</h2>
+        <h2 v-else class="md:text-2xl font-bold animate-fade-up text-base" :key="dynamicDomainName">{{ dynamicDomainName
+          }}</h2>
         <span class="bg-green-100 text-green-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Activo</span>
       </div>
 
@@ -45,8 +46,9 @@
     <div class="p-6">
       <!-- Encabezado -->
       <div translate="no" class="flex items-start justify-between mb-4">
-        <h2 v-if="website.domainName.length == 1" class="text-lg sm:text-2xl font-bold ">{{ currentDomain }}</h2>
-        <h2 v-else class="text-2xl font-bold animate-fade-up" :key="dynamicDomainName">{{ dynamicDomainName }}</h2>
+        <h2 v-if="website.domainName.length == 1" class="text-base sm:text-2xl font-bold  ">{{ currentDomain }}</h2>
+        <h2 v-else class="text-base sm:text-2xl font-bold animate-fade-up" :key="dynamicDomainName">{{ dynamicDomainName
+          }}</h2>
         <span class="bg-green-100 text-green-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Activo</span>
       </div>
 
