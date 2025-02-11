@@ -114,6 +114,19 @@ interface IWebsite {
 const websitesOriginal = ref<IWebsite[]>([
   {
     domainName: [
+      "www.harekrishna.com.mx",
+      "www.radhakrishna.com.mx"
+    ],
+    domainDescription: "Descubra el movimiento Hare Krishna y el poder del Maha Mantra, un canto sagrado que eleva la conciencia espiritual. ISKCON, con templos en Vrindavan, Mumbai y Bengaluru, transmite su devoción en vivo. Conéctate con esta tradición de paz y amor divino.",
+    domainImgUrl: "https://i.ibb.co/zWBKWC1L/harekrishna.png",
+    category: "",
+    creationDate: "",
+    status: "",
+    colorDomains: [],
+    websiteUrl: "https://www.harekrishna.com.mx"
+  },
+  {
+    domainName: [
       "www.comercioamerica.com",
       "www.controlcalidad.net",
       "www.negocioamerica.com",
@@ -386,7 +399,15 @@ const websitesOriginal = ref<IWebsite[]>([
     websiteUrl: "https://www.miciberseguridad.com"
   },
   {
-    domainName: ["www.mantenimientocondominio.com"],
+    domainName: [
+      "gastoscomunescondominio.com",
+      "gastoscomunesedificio.com",
+      "edificioycondominio.com",
+      "mantenimientocondominio.com",
+      "mantenimientoedificio.com",
+      "mantenimientoygastoscomunes.com"
+    ]
+    ,
     domainDescription: "Esta plataforma facilita la gestión de condominios para administradores y propietarios. Los administradores pueden crear reportes, publicar avisos, gestionar encuestas y resolver problemas. Los propietarios pueden reportar incidencias, comentar temas de la comunidad y dar retroalimentación. El objetivo es mejorar la comunicación y la convivencia en los condominios.",
     domainImgUrl: "https://i.ibb.co/N6tHrtL2/mantenimientocond.jpg",
     category: "",
@@ -405,19 +426,7 @@ const websitesOriginal = ref<IWebsite[]>([
     colorDomains: [],
     websiteUrl: "https://www.canastascestas.com"
   },
-  {
-    domainName: [
-      "www.harekrishna.com.mx",
-      "www.radhakrishna.com.mx"
-    ],
-    domainDescription: "Descubra el movimiento Hare Krishna y el poder del Maha Mantra, un canto sagrado que eleva la conciencia espiritual. ISKCON, con templos en Vrindavan, Mumbai y Bengaluru, transmite su devoción en vivo. Conéctate con esta tradición de paz y amor divino.",
-    domainImgUrl: "https://i.ibb.co/zWBKWC1L/harekrishna.png",
-    category: "",
-    creationDate: "",
-    status: "",
-    colorDomains: [],
-    websiteUrl: "https://www.harekrishna.com.mx"
-  },
+
   {
     domainName: ["www.asafoetida.com.mx"],
     domainDescription: "Descubra los beneficios de la Asafoetida, un condimento natural y certificado 100% vegetariano, directamente desde la India. Potencie el sabor de sus platillos y aproveche sus propiedades medicinales. Visite nuestra página y adquiera un producto auténtico y de calidad.",
@@ -575,6 +584,19 @@ const websitesOriginal = ref<IWebsite[]>([
 const websites = ref<IWebsite[]>([
   {
     domainName: [
+      "www.harekrishna.com.mx",
+      "www.radhakrishna.com.mx"
+    ],
+    domainDescription: "Descubra el movimiento Hare Krishna y el poder del Maha Mantra, un canto sagrado que eleva la conciencia espiritual. ISKCON, con templos en Vrindavan, Mumbai y Bengaluru, transmite su devoción en vivo. Conéctate con esta tradición de paz y amor divino.",
+    domainImgUrl: "https://i.ibb.co/zWBKWC1L/harekrishna.png",
+    category: "",
+    creationDate: "",
+    status: "",
+    colorDomains: [],
+    websiteUrl: "https://www.harekrishna.com.mx"
+  },
+  {
+    domainName: [
       "www.comercioamerica.com",
       "www.controlcalidad.net",
       "www.negocioamerica.com",
@@ -871,7 +893,15 @@ const websites = ref<IWebsite[]>([
     websiteUrl: "https://www.miciberseguridad.com"
   },
   {
-    domainName: ["www.mantenimientocondominio.com"],
+    domainName: [
+      "gastoscomunescondominio.com",
+      "gastoscomunesedificio.com",
+      "edificioycondominio.com",
+      "mantenimientocondominio.com",
+      "mantenimientoedificio.com",
+      "mantenimientoygastoscomunes.com"
+    ]
+    ,
     domainDescription: "Esta plataforma facilita la gestión de condominios para administradores y propietarios. Los administradores pueden crear reportes, publicar avisos, gestionar encuestas y resolver problemas. Los propietarios pueden reportar incidencias, comentar temas de la comunidad y dar retroalimentación. El objetivo es mejorar la comunicación y la convivencia en los condominios.",
     domainImgUrl: "https://i.ibb.co/N6tHrtL2/mantenimientocond.jpg",
     category: "",
@@ -879,20 +909,6 @@ const websites = ref<IWebsite[]>([
     status: "",
     colorDomains: [],
     websiteUrl: "https://www.mantenimientocondominio.com"
-  },
-
-  {
-    domainName: [
-      "www.harekrishna.com.mx",
-      "www.radhakrishna.com.mx"
-    ],
-    domainDescription: "Descubra el movimiento Hare Krishna y el poder del Maha Mantra, un canto sagrado que eleva la conciencia espiritual. ISKCON, con templos en Vrindavan, Mumbai y Bengaluru, transmite su devoción en vivo. Conéctate con esta tradición de paz y amor divino.",
-    domainImgUrl: "https://i.ibb.co/zWBKWC1L/harekrishna.png",
-    category: "",
-    creationDate: "",
-    status: "",
-    colorDomains: [],
-    websiteUrl: "https://www.harekrishna.com.mx"
   },
   {
     domainName: ["www.asafoetida.com.mx"],
