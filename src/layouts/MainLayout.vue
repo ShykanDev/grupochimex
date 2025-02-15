@@ -5,8 +5,8 @@
       <div
         class="py-5 flex flex-col md:flex-row items-center justify-center sm:pr-16 space-y-4 md:space-y-0 md:space-x-9">
         <!-- Logo / Marca -->
-        <a href="#"
-          class="flex items-center space-x-2 text-xl font-bold font-urbanist text-gray-800 transition-colors rounded-md hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <RouterLink :to="{ name: 'home' }"
+          class="flex items-center space-x-2 text-xl font-bold font-urbanist text-gray-800 transition-colors rounded-md hover:text-blue-600  ">
           <img src="@/assets/sslLogoV3.png" alt="Logo" class="w-10 h-12">
           <img src="@/assets/IndoExportsLogoFinal.svg" alt="Logo" class="w-12 h-12">
           <div translate="no" class="text-base">
@@ -17,7 +17,7 @@
             <span class="text-sky-700">.</span>
             <span class="text-sky-700">com</span>
           </div>
-        </a>
+        </RouterLink>
 
         <!-- Flags (se ubicarán debajo del logo en móvil y en línea en md) -->
         <div class="flex items-center space-x-4">
